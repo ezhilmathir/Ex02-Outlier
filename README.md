@@ -36,6 +36,11 @@ Remove the outliers
 Plot the datas using Box Plot
 
 # CODE
+
+name:- ezhil mathi r
+reg no:- 212221230026
+
+
 (1) & (2)
 ```python
 import pandas as pd
@@ -59,7 +64,7 @@ sns.boxplot(x="price_per_sqft",data=df)
 ```
 ```
 q1 = df['price_per_sqft'].quantile(0.35)
-q3 = df['price_Aper_sqft'].quantile(0.65)
+q3 = df['price_per_sqft'].quantile(0.65)
 print("First Quantile =",q1,"\nSecond Quantile =",q3)
 
 IQR = q3-q1
@@ -142,64 +147,85 @@ sns.boxplot(x="height",data=df5)
 
 # OUTPUT
 ## (1)(2) Examine price_per_sqft column and use IQR to remove outliers and create new dataframe
+
 ### Dataset
-![dataset](./img/bhp/dataset.png)
+
+![dataset](a.png)
+
 ### Dataset Head
-![dataset head](./img/bhp/head.png)
+
+![dataset head](b.png)
+
 ### Dataset Info
-![dataset info](./img/bhp/info.png)
+
+![dataset info](c.png)
+
 ### Dataset Describe
-![dataset describe](./img/bhp/describe.png)
+
+![dataset describe](d.png)
 ### Null Values
-![null values](./img/bhp/isnull.png)
+![null values](e.png)
 ### Dataset Shape
-![dataset shape](./img/bhp/shape.png)
+
+![dataset shape](f.png)
+
 ### Box plot of price_per_sqft column with outliers
-![ppsqft-with-outliers](./img/bhp/with_outliers.png)
+
+![ppsqft-with-outliers](g.png)
+
 ### price_per_sqft - Dataset after removing outliers
-![df-removed-outliers](./img/bhp/dataset_without_outliers.png)
+![df-removed-outliers](h.png)
 ### price_per_sqft - Shape of Dataset after removing outliers
-![df-removed-outliers](./img/bhp/dataset_shape_without_outliers.png)
+
+![df-removed-outliers](i.png)
 ### Box Plot of price_per_sqft column without outliers
-![df-removed-outliers](./img/bhp/without_outliers.png)
+![df-removed-outliers](j.png)
 
 ## (3) Examine price_per_sqft column and use zscore of 3 to remove outliers.
 ### Dataset after removal of outlier using z score
-![df-removal-zscore](./img/zscore/afterremoval.png)
+![df-removal-zscore](k.png)
 ### Shape of Dataset after removal of outlier using z score
-![df-shape-rem-zscore](./img/zscore/shape.png)
+![df-shape-rem-zscore](l.png)
 ### price_per_sqft column after removing outliers
-![ppsqft-without-outlier](./img/zscore/after_removal.png)
+![ppsqft-without-outlier](m.png)
 
 ## (4) For the data set height_weight.csv detect weight and height outliers using IQR method
 ### Dataset
-![dataset](./img/height_weight/df.png)
+![dataset](n.png)
 ### Dataset Head
-![dataset head](./img/height_weight/head.png)
+![dataset head](o.png)
 ### Dataset Info
-![dataset info](./img/height_weight/info.png)
+![dataset info](p.png)
 ### Dataset Describe
-![dataset describe](./img/height_weight/describe.png)
+![dataset describe](q.png)
 ### Null Values
-![null values](./img/height_weight/isnull.png)
+![null values](r.png)
 ### Dataset Shape
-![dataset shape](./img/height_weight/shape.png)
+![dataset shape](s.png)
 ### Weight - With outliers
-![wei-outliers](./img/height_weight/weight_with_outlier.png)
+![wei-outliers](t.png)
 ### Weight - Dataset after removing Outliers using IQR method
-![wei-without-outliers-df](./img/height_weight/weight_iqr.png)
+![wei-without-outliers-df](u.png)
 ### Weight - Shape of Dataset after removing Outliers using IQR method
-![wei-without-outliers-df-shape](./img/height_weight/weight_without_outlier_shape.png)
+![wei-without-outliers-df-shape](v.png)
 ### Weight - Without Outliers using IQR method
-![wei-without-outliers](./img/height_weight/weight_without_outlier.png)
+![wei-without-outliers](w.png)
 ### Height - With outliers
-![hei-outliers](./img/height_weight/height_iqr.png)
+
+![hei-outliers](x.png)
+
 ### Height - Dataset after removing Outliers using IQR method
-![hei-without-outliers-df](./img/height_weight/height_with_outlier.png)
+
+![hei-without-outliers-df](y.png)
+
 ### Height - Shape of Dataset after removing Outliers using IQR method
-![hei-without-outliers-df-shape](./img/height_weight/height_without_outlier_shape.png)
+
+![hei-without-outliers-df-shape](z.png)
+
 ### Height - Without Outliers using IQR method
-![hei-without-outliers](./img/height_weight/height_without_outlier.png)
+
+![hei-without-outliers](1.png)
 
 # RESULT
+
 The given datasets are read and outliers are detected and are removed using IQR and z-score methods.
